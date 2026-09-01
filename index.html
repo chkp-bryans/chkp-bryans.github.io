@@ -1,81 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cloud Security Website</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bryan Smith — Cloud security, networking, automation</title>
+  <meta name="description" content="Cloud security practitioner. Networking, cloud, security, automation, and DevOps. Azure vWAN, CloudGuard, Terraform, Python.">
+  <meta name="author" content="Bryan Smith">
+  <meta name="theme-color" content="#0B0F14">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'none'; font-src 'self'; connect-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests">
+  <meta property="og:title" content="Bryan Smith">
+  <meta property="og:description" content="Cloud security practitioner. Networking, cloud, security, automation, and DevOps.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chkp-bryans.github.io/">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://chkp-bryans.github.io/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
-
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#resources">Resources</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <h1>Cloud Security Solutions</h1>
-    <p>Protecting your data in the cloud</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">Bryan Smith</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#focus">Focus</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="https://github.com/chkp-bryans"
+               rel="noopener noreferrer">GitHub</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
+  <main id="main">
+    <section class="hero wrap" id="top">
+      <p class="mono">networking · cloud · security · automation</p>
+      <h1>Bryan Smith</h1>
+      <p class="lede">Cloud security practitioner. Networking, cloud, security, automation, and DevOps.</p>
+      <p class="hero-actions">
+        <a class="btn" href="#work">Selected work</a>
+        <a class="btn btn--ghost" href="https://github.com/chkp-bryans" rel="noopener noreferrer">GitHub</a>
+      </p>
+    </section>
 
-  <section id="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at arcu ut neque tincidunt accumsan vitae
-        eget nisl. Sed interdum lacus et suscipit ullamcorper.</p>
-      <p>Praesent id eros ut odio elementum commodo. Nullam vulputate mi id magna mollis, ut pulvinar tortor commodo.
-        Fusce semper aliquet orci, id condimentum ligula cursus id.</p>
-    </div>
-  </section>
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <p class="mono">About</p>
+        <h2 id="about-title">What I work on</h2>
+        <div class="prose">
+          <p>I work on cloud network security — the unglamorous layer where routing, identity, and controls actually meet. I am a practitioner at Check Point Software Technologies Ltd., spending most of my public time on CloudGuard, Azure networking, Terraform, and DevOps automation.</p>
+          <p>Recent original work includes a single-apply Azure Virtual WAN plus CloudGuard NVA landing zone, and a Python recon helper that fingerprints WAF/CDN/DNS (including CloudGuard WAF). I am still deepening Python, Terraform, Kubernetes, and CloudGuard — and I am interested in collaborating on cloud security.</p>
+        </div>
+      </div>
+    </section>
 
-  <section id="services">
-    <div class="container">
-      <h2>Our Services</h2>
-      <ul>
-        <li>Cloud Security Assessment</li>
-        <li>Secure Cloud Architecture Design</li>
-        <li>Identity and Access Management</li>
-        <li>Data Encryption and Privacy</li>
-        <li>Cloud Incident Response</li>
-      </ul>
-    </div>
-  </section>
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <p class="mono">Selected work</p>
+        <h2 id="work-title">Original public repos</h2>
+        <p class="muted">A short list of original public work I authored — not every repo.</p>
+        <div class="grid">
+          <article class="card card--featured">
+            <p class="card__meta">
+              <time datetime="2026">2026</time>
+              <span aria-hidden="true"> · </span>
+              <span>HCL</span>
+            </p>
+            <h3 class="card__title">Azure vWAN + CloudGuard NVA</h3>
+            <p class="card__blurb">Terraform for a Standard Azure Virtual WAN, an East US hub, and Check Point CloudGuard Network Security NVAs — one plan/apply. Gaia R82, routing intent, Azure CLI auth.</p>
+            <ul class="chips" aria-label="Topics">
+              <li>Azure</li><li>vWAN</li><li>Terraform</li><li>CloudGuard</li><li>NVA</li>
+            </ul>
+            <a class="card__repo" href="https://github.com/chkp-bryans/terraform-azure-vwan-checkpoint" rel="noopener noreferrer">View repo</a>
+          </article>
+          <article class="card">
+            <p class="card__meta">
+              <time datetime="2026">2026</time>
+              <span aria-hidden="true"> · </span>
+              <span>Python</span>
+            </p>
+            <h3 class="card__title">web-detective</h3>
+            <p class="card__blurb">Python recon tool for WAF/CDN/DNS fingerprinting, with CloudGuard WAF detection via i2.checkpoint.com CNAMEs. Working script, not a packaged product.</p>
+            <ul class="chips" aria-label="Topics">
+              <li>Python</li><li>WAF</li><li>DNS</li><li>CloudGuard</li>
+            </ul>
+            <a class="card__repo" href="https://github.com/chkp-bryans/web-detective" rel="noopener noreferrer">View repo</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <section id="resources">
-    <div class="container">
-      <h2>Resources</h2>
-      <p>Stay up to date with the latest cloud security resources:</p>
-      <ul>
-        <li><a href="https://www.example.com">Cloud Security Blog</a></li>
-        <li><a href="https://www.example.com">eBooks and Whitepapers</a></li>
-        <li><a href="https://www.example.com">Webinars and Events</a></li>
-      </ul>
-    </div>
-  </section>
+    <section class="section" id="focus" aria-labelledby="focus-title">
+      <div class="wrap">
+        <p class="mono">Focus</p>
+        <h2 id="focus-title">Where public work clusters</h2>
+        <p class="muted">Public work clusters around cloud network security: Azure (especially vWAN and gateway load-balancing patterns), CloudGuard, Terraform, and WAF reconnaissance. The chips also reflect clouds and topics I spend time in — not a résumé keyword dump, and not a claim that I authored every related repo.</p>
+        <ul class="chips">
+          <li>Azure</li><li>AWS</li><li>GCP</li><li>OCI</li><li>Terraform</li>
+          <li>Python</li><li>Kubernetes</li><li>CloudGuard</li><li>Networking</li><li>DevSecOps</li>
+        </ul>
+      </div>
+    </section>
 
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>Get in touch with our experts:</p>
-      <form action="submit-form.php" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
-
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <p class="mono">Contact</p>
+        <h2 id="contact-title">GitHub is the public channel</h2>
+        <p><a href="https://github.com/chkp-bryans" rel="noopener noreferrer">github.com/chkp-bryans</a></p>
+        <!-- USER: LinkedIn desired (2026-09-01) but no URL supplied. Do not invent.
+             Uncomment and replace REPLACE only when a real profile URL exists.
+        <li><a href="https://www.linkedin.com/in/REPLACE" rel="noopener noreferrer">LinkedIn</a></li>
+        -->
+        <!-- Email not requested for v1. Do not add mailto. -->
+      </div>
+    </section>
+  </main>
   <footer>
-    <div class="container">
-      <p>&copy; 2023 Cloud Security Solutions. All rights reserved.</p>
+    <div class="wrap">
+      <p>© <span data-year>2026</span> Bryan Smith · Personal site. Views are my own. Not an official Check Point website.</p>
     </div>
   </footer>
-
 </body>
-
 </html>
